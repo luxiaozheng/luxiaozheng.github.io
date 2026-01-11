@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxiao Zheng - Personal Website</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -22,6 +23,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#blog">Blog</a>
       <a href="#resume">Resume</a>
     </nav>
   </header>
@@ -50,6 +52,17 @@
       </ul>
       <p>More posts available on <a href="https://developer.nvidia.com/blog/author/luxiaozheng/">my NVIDIA Developer Blog author page</a>.</p>
     </section>
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog-controls">
+        <button class="lang-filter active" data-lang="all">All</button>
+        <button class="lang-filter" data-lang="en">English</button>
+        <button class="lang-filter" data-lang="zh">中文</button>
+      </div>
+      <div id="blog-posts-container" class="blog-posts-container">
+        <p class="loading-message">Loading blog posts...</p>
+      </div>
+    </section>
     <section id="resume">
       <h2>Resume</h2>
       <h3>Professional Experience</h3>
@@ -57,6 +70,7 @@
         <li><strong>Senior Systems Software Engineer, TensorRT General Performance</strong>, NVIDIA, Santa Clara, US (Aug 2022 - Present)
           <ul>
             <li>Monitor and debug TensorRT performance issues.</li>
+            <li>Major contributor to <a href="https://github.com/NVIDIA/TensorRT-Edge-LLM">TensorRT Edge-LLM</a>, a high-performance, light-weight C++ LLM and VLM inference runtime for NVIDIA Edge platforms.</li>
             <li>Contribute to <a href="https://github.com/NVIDIA/TensorRT">TensorRT Open-source Software</a></li>
             <li>Contribute to <a href="https://github.com/NVIDIA/TensorRT-LLM">TensorRT-LLM</a> and benchmark performance.</li>
           </ul>
@@ -114,5 +128,6 @@
   <footer class="site-footer">
     <p>&copy; Luxiao Zheng 2021-2025</p>
   </footer>
+  <script src="assets/js/blog.js"></script>
 </body>
 </html>
